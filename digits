@@ -1,0 +1,11 @@
+list=[]
+def number(y,list):
+    while y!=0:
+        
+        if y%2==0:
+            list.append(0)
+        else:
+            list.append(1)
+    y=y/2
+    list.reverse()
+    print (list)
