@@ -1,0 +1,4 @@
+def indexing(p, n):
+    for index in range(len(p-1)):
+        if p[index]==n:
+            print(index)
