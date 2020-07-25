@@ -1,0 +1,26 @@
+s = "abppplee" 
+d = ("able", "ale", "apple", "bale", "kangabpple")
+
+bwn=[]
+for word in d:
+    matcher=0
+    index=0
+    pre=0
+    for alphabet in word:
+        test=0
+        for index in range(pre,8):
+            if alphabet==s[index]:
+                matcher +=1
+                pre=index
+                test=1
+                break
+            
+        if test==0:
+            matcher=0
+            break
+    bwn.append(matcher)
+list1=sorted(bwn)
+list2=list1[::-1]
+for i in range(len(bwn)):
+    if bwn[i]==list2[0]:
+        print(d[i])
