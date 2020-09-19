@@ -1,16 +1,22 @@
-g=("my trial")
+g=("meriiiii mehnat hai ye")# i love my country
 m=0
+list=[]
+n=''
 for i in range(len(g)):
-    if g[i]=='':
-        continue
+    count=0
     m=i+1
-    d=''
+    for k in list:
+        if k==g[i]:
+            break
+        else:
+            pass
     for j in range(m,len(g)):
-        if g[j]=='' or g[i]==d:
+        if g[i]!=g[j]:
             continue
         if g[i]==g[j]:
-            d = g[j]
-            print(g[j])
-
-# I am facing an issue with printing of letters that are more than twice in the g string. For example if a letter is present 5 times in a string, then it will print that letter 4 times.
-
+            count+=1
+    if count==1:
+        print(g[i])
+    if count>1:
+        list.append(g[i])
+    
