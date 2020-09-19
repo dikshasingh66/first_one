@@ -1,0 +1,16 @@
+g=("my trial")
+m=0
+for i in range(len(g)):
+    if g[i]=='':
+        continue
+    m=i+1
+    d=''
+    for j in range(m,len(g)):
+        if g[j]=='' or g[i]==d:
+            continue
+        if g[i]==g[j]:
+            d = g[j]
+            print(g[j])
+
+# I am facing an issue with printing of letters that are more than twice in the g string. For example if a letter is present 5 times in a string, then it will print that letter 4 times.
+
