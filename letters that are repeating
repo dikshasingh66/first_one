@@ -1,7 +1,7 @@
-g=("meriiiii mehnat hai ye")# i love my country
+g=("my trial")# i love my country
 m=0
 list=[]
-n=''
+trial=0
 for i in range(len(g)):
     count=0
     m=i+1
@@ -16,7 +16,9 @@ for i in range(len(g)):
         if g[i]==g[j]:
             count+=1
     if count==1:
+        trial+=1
         print(g[i])
     if count>1:
         list.append(g[i])
-    
+if trial==0:
+    print("None of the characters are repeating")
