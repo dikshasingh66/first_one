@@ -1,0 +1,6 @@
+n=int(input("Enter the value of a-\n"))
+x=int(input("Enter the value of x-\n"))
+m=n
+for i in range (x-1):
+    m=m*n
+print(m)
