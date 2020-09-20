@@ -1,0 +1,19 @@
+#counting the triplets
+k=[2,7,3,5] #[1,2,3,5]
+l=(sorted(k))
+count=0
+for i in k:
+    count+=1
+sum=0
+trial=0
+for j in range(count-2):
+    sum=l[j]+l[j+1]
+    if sum==l[j+2]:
+        trial+=1
+        print(f"yes, {trial} position number is a triplet")
+    else:
+        trial+=1
+        print(f'no, this series doesnt stand true for triplet as the {trial} position is not a triplet')
+        break
+
+#i have made this code for checking each term. If u replace the break with continue it will continue to check even after a number is not a triplet. I used sort funtion, if u dont want me to use the sort function, let me know, I will do it.
