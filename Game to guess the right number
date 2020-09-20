@@ -1,0 +1,39 @@
+n=18
+count = 0
+m=10
+print("You have only 9 chances to win this game")
+choice=input("Press y to continue and n to discontinue \n")
+"""
+if choice=='y':
+    continue
+
+if choice=='n':
+    break
+else:
+    print("either choose y or n")
+"""
+
+
+while True:
+    p = int(input("guess the number: "))
+
+    if p==n:
+        print("congratulations")
+        count+=1
+        print("Number of trials you took to finish- ", count)
+        break
+
+    elif p<n:
+        print("number doesnt match, please put a larger number: ")
+        count+=1
+        m = m - 1
+        print("number of chances you are left with ", m-1)
+    elif p > n:
+        print("number doesnt match, please put a smaller number: ")
+        count+=1
+        m=m-1
+        print("number of chances you are left with ", m - 1)
+
+    if m==1:
+        print("sorry, you exhausted the number of trials")
+        break
