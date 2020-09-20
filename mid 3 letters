@@ -1,0 +1,10 @@
+#Given a string of odd length greater 7, return a string made of the middle three chars of a given String
+r1 = "JaSonAy"
+count=0
+for i in r1:
+    count+=1
+n=count-1
+n=n//2
+n-=1
+m=n+3
+print(r1[n:m])
