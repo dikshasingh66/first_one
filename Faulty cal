@@ -1,0 +1,39 @@
+#this is a faulty calculator that gives u wrong calculation for specific velues. It has been programmed like that
+print("Welcome to the faulty calculation")
+m = int(input("a :"))
+p = int(input("b: "))
+n = input("choose one from the following (*,/,+,-): ")
+
+if (n == '+'):
+    if (m == 56 and p == 9):
+        print("{} + {} = {}".format(m,p,77))
+
+    else:
+        print("{}+{}= {}".format(m,p,m + p))
+
+if (n == '/'):
+    if (m == 56 and p == 6):
+
+        print("{} / {} = {}".format(m,p,4))
+
+    else:
+        o = str("{:.2f}".format(m / p))   #The print statement in Python converts its arguments to strings,
+        # and outputs those strings to stdout. To save the string to a variable instead, only convert it to a string:
+        print("{} / {} = {}".format(m, p, o))
+
+if n == '*':
+    if m == 45 and p == 3:
+        print("{} * {} = {}".format(m, p, 555))
+
+    else:
+        print("{} * {} = {}".format(m, p, m*p))
+
+if n == '-':
+    if m == 55 and p == 3:
+        print("{} - {} = {}".format(m, p, 56))
+
+    if m>p:
+        print("{} - {} = {}".format(m, p, m-p))
+
+    if p>m:
+        print("{} - {} = {}".format(p, m, p - m))
