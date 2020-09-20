@@ -24,3 +24,34 @@ list2=list1[::-1]
 for i in range(len(bwn)):
     if bwn[i]==list2[0]:
         print(d[i])
+        
+#2nd code
+d = ("bale","able", "ale", "apple", "kangabpple","bpale","appplee")
+s = "abppplee"
+list=[]
+for i in d:
+    count = 0
+    n = 0
+    for k in range(len(i)):
+        for l in range(n,len(s)):
+            if i[k]==s[l]:
+                n=l+1
+                count+=1
+                if count==len(i):
+                    list.append(i)
+
+                else:
+                    break
+print(list)
+m=''
+prior = 0
+trial=0
+for i in list:
+    for l in i:
+        prior+=1
+        if prior>trial:
+            m=i
+        prior,trial=trial,0
+print(m)
+
+
