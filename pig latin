@@ -5,8 +5,6 @@ for j in range(len(a)):
     if b=='':
         pass
         for i in range(len(list)):
-            if list[i]!=a[j]:
-                continue
             if list[i]==a[j]:
                 b+=a[j]
                 b+=a[(j+1):]
@@ -15,4 +13,5 @@ for j in range(len(a)):
                         b+=a[f]
                 b+='ay'
                 break
+ #no need of an else statement because here the loop anyway will be repeating the condition and apart from that we dont have any condition to be executed through else statement
 print(b)
