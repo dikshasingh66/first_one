@@ -1,4 +1,4 @@
-a='eller'
+a='phsgdaer'
 list=['a','e','i','o','u']
 b=''
 for j in range(len(a)):
@@ -10,6 +10,9 @@ for j in range(len(a)):
             if list[i]==a[j]:
                 b+=a[j]
                 b+=a[(j+1):]
+                for f in range(0,j):
+                    if a[f] != '':
+                        b+=a[f]
                 b+='ay'
                 break
 print(b)
