@@ -1,0 +1,15 @@
+a='eller'
+list=['a','e','i','o','u']
+b=''
+for j in range(len(a)):
+    if b=='':
+        pass
+        for i in range(len(list)):
+            if list[i]!=a[j]:
+                continue
+            if list[i]==a[j]:
+                b+=a[j]
+                b+=a[(j+1):]
+                b+='ay'
+                break
+print(b)
