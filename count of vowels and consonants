@@ -1,0 +1,39 @@
+#How do you count a number of vowels and consonants in a given string?
+a='mybranismyoouo'
+b=['a','e','i','o','u']
+c=[]
+g=''
+count=0
+for i in b:
+    count = 0
+    for j in a:
+        if i ==j:
+            count+=1
+    if count==0:
+        c.append(f"{i} has been repeated {count} time") #if you want to remove the printintg of vowel thats not present at all, then remove the lines 12 and 13
+    if count>1:
+        c.append((f"{i} is present {count} times"))
+    if count==1:
+        c.append(f"{i} has been repeated {count} time")
+for k in a:
+    for m in b:
+        if k in b:
+            break
+        else:
+            g+=k
+            break
+print('Vowel list-', c)
+list1=[]
+for i in range(len(g)):
+    count = 1
+    m=i+1
+    for j in range(m,len(g)):
+        if g[i]==g[j] and g[j]!='':
+            count+=1
+            g = g[:j] + '5' + g[j+1:] #I saw a very similar code in a website, but i guarantee that its my own code and i didnt copy. Only this lines was taken from a website. Rest of the code is my work
+
+    if count>1 and g[i]!='5':
+        list1.append(f"{g[i]} has been repeated {count} times")
+    if count==1 and g[i]!='5':
+        list1.append(f"{g[i]} has been repeated {count} time")
+print('Consonant list-',list1)
