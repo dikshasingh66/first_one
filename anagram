@@ -1,0 +1,6 @@
+a="sorted"
+b="dorset"
+if sorted(a)==sorted(b):
+    print("whoa")
+else:
+    print("try other word")#this code is written by me, but logic was taken from internet.
