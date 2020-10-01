@@ -1,0 +1,9 @@
+a="abcdefghijklmnopqrstuvwxyz"
+t="the quick brown fox jumps over a lazy dog"
+
+def pg(t,a):
+    asa=set(a)
+    t=t.replace(' ','')
+    t=set(t)
+    print(t)
+    return(t==asa)
